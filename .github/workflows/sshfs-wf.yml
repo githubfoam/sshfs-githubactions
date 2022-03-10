@@ -75,7 +75,9 @@ jobs:
         # find ENTRYPOINT & CMD on an image
         docker inspect -f '{{.Config.Entrypoint}}' ${name}:${version}
         # docker run ${name}:${version} -V      
-        # docker run ${name}:${version} sshfs -V 
-        docker run -it --rm --name test ${name}:${version} sshfs -V 
+        # docker run ${name}:${version} sshfs -V
+        # the input device is not a TTY 
+        # docker run -it --rm --name test ${name}:${version} sshfs -V 
+        docker run -i --rm --name test ${name}:${version} sshfs -V 
  
         
