@@ -8,5 +8,5 @@ RUN set -xe && \
     apt-get install sshfs -y
 
 ENTRYPOINT ["sshfs"]
-CMD ["-h"]
+CMD ["-V"]
 
