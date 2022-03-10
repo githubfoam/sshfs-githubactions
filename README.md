@@ -1,4 +1,6 @@
 # sshfs-githubactions
+[![sshfs CI workflow](https://github.com/githubfoam/sshfs-githubactions/actions/workflows/sshfs-wf.yml/badge.svg)](https://github.com/githubfoam/sshfs-githubactions/actions/workflows/sshfs-wf.yml)  
+
 ~~~~
 https://github.com/libfuse/sshfs
 
