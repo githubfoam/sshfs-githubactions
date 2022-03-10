@@ -1,0 +1,12 @@
+# https://hub.docker.com/_/ubuntu
+FROM ubuntu:latest
+LABEL org.opencontainers.image.authors="githubfoam"
+
+
+RUN set -xe && \
+    apt-get update && \
+    apt-get install sshfs -y
+
+ENTRYPOINT ["sshfs"]
+CMD ["-h"]
+
